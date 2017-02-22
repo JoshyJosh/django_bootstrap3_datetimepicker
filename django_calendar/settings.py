@@ -25,12 +25,14 @@ SECRET_KEY = '^19lxnw_9c_7aop*^e(pv4k!@2q%g&6u87l)6b5uz#fy-l1es#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'calendar_events.apps.CalendarEventsConfig',
+    'django_calendar',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,7 +78,7 @@ WSGI_APPLICATION = 'django_calendar.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db1.sqlite3'),
     }
 }
 

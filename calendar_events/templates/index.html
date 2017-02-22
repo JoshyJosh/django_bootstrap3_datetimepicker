@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar Widget Test</title>
+</head>
+<body>
+  {% if events %}
+  {% for event in events %}
+    <p>event</p>
+  {% endfor %}
+  {% else %}
+    <p>Sorry, no events here!</p>
+  {% endif %}
+</body>
+</html>
